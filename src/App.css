@@ -1,0 +1,65 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #00000056;
+  background-image: url('/background.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%; /* para empujar hacia abajo dentro del contenedor */
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+.reserva {
+  transform: scale(1.5);
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: rgba(255, 255, 255, 0.925);
+  background: #ce3591;
+  background: linear-gradient(to right, #2f25be, #3f3b6e, #1d1d30);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.reserva svg {
+  margin-right: 3px;  
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.reserva span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.reserva:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+.reserva:hover span {
+  transform: translateX(7px);
+}
+.reserva:hover {
+  box-shadow: 0 20px 76px rgba(0, 0, 0, 1);
+}
+
+
