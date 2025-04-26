@@ -11,6 +11,9 @@ const Login = () => {
     const hanCliente=()=>{
       navigate('/CustomerDashboard')
     }
+    const hanAdmin=()=>{
+      navigate('/adminDashboard')
+    }
   return (
     
     <StyledWrapper>
