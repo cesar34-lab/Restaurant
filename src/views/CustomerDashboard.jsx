@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 function CustomerDashboard() {
+const navigate = useNavigate();
+const handReservar=()=>{
+navigate('/RealizarReserva')
+}
+
   return (
     <Container>
       <StyledWrapper>
@@ -36,7 +42,7 @@ function CustomerDashboard() {
           </div>
         </button>
 
-        <button className="styled-button">
+        <button className="styled-button" onClick={handReservar}>
           Relizadar Reserva
           <div className="inner-button">
             <svg
